@@ -6,11 +6,106 @@
   <title>Formulários</title>
 </head>
 
-<body>
+<body style="background-color: #271A45; color: white;" id="corpo">
 
   <form action="">
 
+    Nome:
+    <input type="text" placeholder="Digite seu nome" name="nome" id="nome">
+    <br>
+
+    Email:
+    <input type="email" placeholder="Digite seu E-mail" name="email">
+    <br>
+
+    Senha:
+    <input type="password" placeholder="Digite sua senha" name="senha">
+    <br>
+
+    Idade:
+    <input type="number" placeholder="Digite sua idade" name="idade">
+    <br>
+
+    Horario de Registro
+    <input type="time" value="15:00" disabled name="horaReg">
+    <br>
+
+    Data de nascimento:
+    <input type="date" name="datNasc">
+    <br>
+
+    Número celular:
+    <input type="tel" name="numCel">
+    <br>
+
+    URL da foto:
+    <input type="url" name="urlFoto">
+    <br>
+
+    Frente RG:
+    <input type="file" accept="" multiple name="fotoFrenteRG">
+    <br>
+
+    Escolha sua cor favorita:
+    <input type="color" name="corFavorita">
+    <br>
+    <input type="button" value="Aplicar como cor de fundo"></button>
+    <br>
+
+    Estado civil:
+    <br>
+    Solteiro: <input type="radio" name="estado-civil">
+    Casado: <input type="radio" name="estado-civil">
+    <br>
+
+    Aceito os termos de uso:
+    <input type="checkbox" name="aceitaTermo">
+    <br>
+
+    Nivel de Inglês: 1
+    <input type="range" min="1" max="5" step="1" name="nvlIngles"> 5
+    <br>
+
+    Estado:
+    <select name="estado">
+      <option value="SP" selected disabled>Selecione</option>
+      <option value="SP">São Paulo</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="ES">Espírito Santo</option>
+    </select>
+    <br>
+
+    Fale um pouco sobre você:
+    <br>
+    <textarea name="detalhes"></textarea>
+    <br>
+    <input type="button" id="btn" value="Enviar"></button>
+
   </form>
+
+
+  <!-- JavaScript -->
+  <script>
+    let cor = document.querySelector('input[type="color"]');
+    let btn = document.querySelector('input[type="button"]');
+    let corpo = document.querySelector('body');
+
+
+    btn.addEventListener("click", function () {
+      let corFundo = cor.value;
+      corpo.style.backgroundColor = `${corFundo}`
+    });
+
+  </script>
+
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+
+    }
+  </style>
 
 </body>
 
