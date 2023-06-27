@@ -10,7 +10,7 @@
 
   <h1>Cadastro de usuário</h1>
 
-  <form action="">
+  <form action="" method="get">
 
     <!-- Informações pessoais -->
     <fieldset>
@@ -25,18 +25,17 @@
 
         <tr>
           <td><label for="email">Email*:</label></td>
-          <td><input type="email" name="email" id="email" placeholder="exemplo@exemplo.com"></td>
+          <td><input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required></td>
         </tr>
 
         <tr>
           <td><label for="senha">Senha*:</label></td>
-          <td><input type="password" name="senha" id="senha" placeholder="Digite uma senha"></td>
+          <td><input type="password" name="senha" id="senha" placeholder="Digite uma senha" required></td>
         </tr>
 
       </table>
 
     </fieldset>
-
     <br>
 
     <!-- Informações de endereço -->
@@ -46,8 +45,8 @@
 
         <tr>
           <td><label for="cep">Cep*:</label></td>
-          <td><input type="text" name="cep" id="cep" maxlength="8" placeholder="Digite seu CEP"
-              pattern="[0-9]{5}-[\d]{3}"></td>
+          <td><input type="text" name="cep" id="cep" placeholder="Digite seu CEP" pattern="[\d]{5}-?[\d]{3}" required>
+          </td>
         </tr>
 
         <tr>
@@ -65,7 +64,7 @@
           <td>UF*:</td>
           <td>
             <select name="UF" required>
-              <option value="SP" selected disabled>Selecione</option>
+              <option value="" selected disabled>Selecione</option>
               <option value="SP">SP</option>
               <option value="MG">MG</option>
               <option value="RJ">RJ</option>
@@ -78,7 +77,7 @@
           <td>Cidade*:</td>
           <td>
             <select name="cidade" required>
-              <option value="SP" selected disabled>Selecione</option>
+              <option value="" selected disabled>Selecione</option>
               <option value="saoPaulo">São Paulo</option>
               <option value="rioDeJaneiro">Rio de Janeiro</option>
               <option value="beloHorizonte">Belo Horizonte</option>
@@ -90,7 +89,7 @@
 
     </fieldset>
 
-
+    <br>
     <!-- Informações profissionais -->
 
     <fieldset>
@@ -103,7 +102,7 @@
         </tr>
         <tr>
           <td>
-            <textarea name="bio" id="bio" cols="30" rows="5" placeholder="Fale um pouco sobre você"></textarea>
+            <textarea name="bio" id="bio" cols="30" rows="5" placeholder="Fale um pouco sobre você" required></textarea>
           </td>
         </tr>
 
@@ -113,25 +112,27 @@
 
         <tr>
           <td>
-            <input type="radio" value="fullstack" name="area-atuacao" id="fullstack">
+            <input type="radio" value="fullstack" name="area-atuacao" id="fullstack" required checked>
             <label for="fullstack">FullStack</label>
           </td>
         </tr>
 
         <tr>
-          <td><input type="radio" value="cloud" name="area-atuacao" id="cloud">
+          <td><input type="radio" value="cloud" name="area-atuacao" id="cloud" required>
             <label for="cloud">Cloud</label>
           </td>
         </tr>
 
         <tr>
-          <td><input type="radio" value="fullstackCloud" name="area-atuacao" id="fullstackCloud">
+          <td><input type="radio" value="fullstackCloud" name="area-atuacao" id="fullstackCloud" required>
             <label for="fullstackCloud">FullStack + Cloud</label>
           </td>
         </tr>
       </table>
 
     </fieldset>
+
+    <br>
 
     <table>
 
