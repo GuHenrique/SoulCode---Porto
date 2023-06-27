@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadatro</title>
+</head>
+
+<body>
+
+  <h1>Cadastro de usuário</h1>
+
+  <form action="">
+
+    <!-- Informações pessoais -->
+    <fieldset>
+
+      <legend>Informações pessoais</legend>
+      <table>
+
+        <tr>
+          <td><label for="nome">Nome*:</label></td>
+          <td><input type="text" name="nome" id="nome" maxlength="200" required placeholder="Digite seu nome"></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email*:</label></td>
+          <td><input type="email" name="email" id="email" placeholder="exemplo@exemplo.com"></td>
+        </tr>
+
+        <tr>
+          <td><label for="senha">Senha*:</label></td>
+          <td><input type="password" name="senha" id="senha" placeholder="Digite uma senha"></td>
+        </tr>
+
+      </table>
+
+    </fieldset>
+
+    <br>
+
+    <!-- Informações de endereço -->
+    <fieldset>
+      <legend>Informações de endereço</legend>
+      <table>
+
+        <tr>
+          <td><label for="cep">Cep*:</label></td>
+          <td><input type="text" name="cep" id="cep" maxlength="8" placeholder="Digite seu CEP"
+              pattern="[0-9]{5}-[\d]{3}"></td>
+        </tr>
+
+        <tr>
+          <td><label for="rua">Rua*:</label></td>
+          <td><input type="text" name="rua" id="rua" required placeholder="Nome da rua"></td>
+        </tr>
+
+        <tr>
+          <td><label for="numero">Número*:</label></td>
+          <td><input type="text" name="numero" id="numero" required placeholder="Número da residência"></td>
+        </tr>
+
+        <tr>
+
+          <td>UF*:</td>
+          <td>
+            <select name="UF" required>
+              <option value="SP" selected disabled>Selecione</option>
+              <option value="SP">SP</option>
+              <option value="MG">MG</option>
+              <option value="RJ">RJ</option>
+              <option value="ES">ES</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Cidade*:</td>
+          <td>
+            <select name="cidade" required>
+              <option value="SP" selected disabled>Selecione</option>
+              <option value="saoPaulo">São Paulo</option>
+              <option value="rioDeJaneiro">Rio de Janeiro</option>
+              <option value="beloHorizonte">Belo Horizonte</option>
+              <option value="vitoria">Vitória</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+    </fieldset>
+
+
+    <!-- Informações profissionais -->
+
+    <fieldset>
+
+      <legend>Informações profissionais</legend>
+      <table>
+
+        <tr>
+          <td><label for="bio">Bio*:</label></td>
+        </tr>
+        <tr>
+          <td>
+            <textarea name="bio" id="bio" cols="30" rows="5" placeholder="Fale um pouco sobre você"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Área de atuação*:</td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="radio" value="fullstack" name="area-atuacao" id="fullstack">
+            <label for="fullstack">FullStack</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="radio" value="cloud" name="area-atuacao" id="cloud">
+            <label for="cloud">Cloud</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="radio" value="fullstackCloud" name="area-atuacao" id="fullstackCloud">
+            <label for="fullstackCloud">FullStack + Cloud</label>
+          </td>
+        </tr>
+      </table>
+
+    </fieldset>
+
+    <table>
+
+      <tr>
+        <td><input type="submit" value="Cadastrar"></td>
+        <td><input type="reset" value="Limpar"></td>
+      </tr>
+
+    </table>
+
+  </form>
+
+  <br>
+  <a href="login.html">Já tem um cadastro? Faça o login</a>
+
+
+</body>
+
+</html>
