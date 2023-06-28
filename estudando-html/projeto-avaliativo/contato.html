@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:locale" content="pt-BR">
+  <meta property="og:type" content="Página de contato">
+  <meta property="og:title" content="Formulário para contato">
+  <meta property="og:description" content="Formulário para entrar em contato com a central de notícias">
+  <meta property="og:url" content="http://127.0.0.1:5500/estudando-html/projeto-avaliativo/contato.html">
+  <meta property="og:image" content="https://soulcode.com/assets/img/logo.png">
+  <meta property="og:site_name" content="Notícias Do Dia - NDD">
+  <title>Notícias Do Dia - NDD</title>
+</head>
+
+<body>
+
+  <!--   NAVBAR   -->
+
+  <header>
+    <nav>
+      <a href="./index.html">Início</a>
+    </nav>
+  </header>
+
+  <!--   FORM   -->
+
+  <main>
+    <section>
+
+      <h1>Contato</h1>
+
+      <form action="" method="get">
+        <table>
+
+          <!-- Nome -->
+          <tr>
+            <td><label for="nome">Nome:</label></td>
+          </tr>
+          <tr>
+            <td><input type="text" name="nome" id="nome" maxlength="200" placeholder="Digite seu nome" required></td>
+          </tr>
+
+          <!-- Email -->
+          <tr>
+            <td><label for="email">E-mail:</label></td>
+          </tr>
+          <tr>
+            <td><input type="email" nome="email" id="email" placeholder="exemplo@email.com" required></td>
+          </tr>
+
+          <!-- Assunto -->
+          <tr>
+            <td><label for="assunto">Assunto:</label></td>
+          </tr>
+          <tr>
+            <td>
+              <select name="assunto" id="assunto" required>
+                <option value="" disabled selected>Selecione um assunto</option>
+                <option value="criticasSugestoes">Críticas e sugestões</option>
+                <option value="trabalheConosco">Trabalhe conosco</option>
+                <option value="duvidas">Dúvidas</option>
+                <option value="envieNoticia">Envie uma notícia</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Mensagem -->
+          <tr>
+            <td><label for="msg">Mensagem:</label></td>
+          </tr>
+          <tr>
+            <td><textarea name="msg" id="msg" cols="30" rows="5" placeholder="Deixe sua mensagem aqui"
+                required></textarea></td>
+          </tr>
+
+          <!-- Botões -->
+
+        </table>
+
+        <input type="submit" value="Enviar"></td>
+        <input type="reset" value="Limpar"></td>
+
+
+      </form>
+
+
+    </section>
+
+  </main>
+
+
+  <!--  RODAPÉ   -->
+
+  <footer>
+    <br><br><br>
+
+
+    &copy;Copyright 2000-2023 BootCamp SoulCode Academy e Porto Seguro
+
+    <br>
+    <br>
+
+    <a href="https://www.facebook.com/SoulCodeAcademy/"><img src="./icons/facebook.svg" alt="ícone Facebook"
+        width=" 25px"></a>
+    &nbsp;
+    <a href="https://www.instagram.com/soulcodeacademy/"><img src="./icons/instagram.svg" alt="Ícone Instagram"
+        width="25px"></a>
+    &nbsp;
+
+    <a href="https://www.linkedin.com/company/soulcodeacademy/?originalSubdomain=br"><img src="./icons/linkedin.svg"
+        alt="ícone Facebook" width=" 25px"></a>
+
+    &nbsp;
+
+    <br><br><br>
+  </footer>
+
+</body>
+
+</html>
+</body>
+
+</html>

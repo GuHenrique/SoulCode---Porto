@@ -14,73 +14,45 @@
 </head>
 
 <body>
+  <!--   NAVBAR HOME   -->
 
   <header>
     <nav>
-      <table>
-        <tr>
-          <col style="width:25%">
-          <col style="width:25%">
-          <col style="width:25%">
-          <col style="width:25%">
-          <col style="width:25%">
-          <td><a href="#politica">Política</a></td>
-          <td><a href="#educacao">Educação</a></td>
-          <td><a href="#economia">Economia</a></td>
-          <td><a href="#inovacao">Inovação</a></td>
-          <td><a href="#contato">Contato</a></td>
-        </tr>
-      </table>
+      <a href="#noticiasLocais">Notícias Locais</a>&nbsp;&nbsp;&nbsp;
+      <a href="#esporte">Esporte</a>&nbsp;&nbsp;&nbsp;
+      <a href="#curiosidade">Curiosidades</a>&nbsp;&nbsp;&nbsp;
+      <a href="#entretenimento">Entretenimento</a>&nbsp;&nbsp;&nbsp;
     </nav>
   </header>
 
   <br>
   <br>
 
-  <aside>
-    <table border="1">
-
-      <thead>
-        <caption>
-          <strong>Notícias Populares</strong>
-        </caption>
-        <tr>
-          <th>Título</th>
-          <th>Data</th>
-          <th>Visualizações</th>
-      </thead>
-
-      </tr>
-      <tbody>
-        <tr>
-          <td><a href="./educacao/educacao1.html">Pela 1ª vez, USP fica entre as 100 melhores universidades do
-              mundo.</a></td>
-          <td>27/06/2023 17h00</td>
-          <td>8.837</td>
-        </tr>
-        <tr>
-          <td><a href="./economia/economia1.html">Tesouro Direto: venda de títulos chega a R$ 4,31 bilhões em maio.</a>
-          </td>
-          <td>27/06/2023 20h02</td>
-          <td>6.438</td>
-        </tr>
-        <tr>
-          <td><a href="./inovacao/inovacao1.html">Como funciona a Starlink, serviço de internet de Elon Musk usado na
-              missão do submarino que desapareceu.</a>
-          </td>
-          <td>22/06/2023 04h01</td>
-          <td>5.687</td>
-        </tr>
-      </tbody>
-    </table>
-
+  <!--   LISTA DE SESSÕES   -->
+  <aside id="menuRapido">
+    <ul>
+      <li><a href="#artigos">Artigos</a>
+        <ul>
+          <li><a href="#politica">Política</a></li>
+          <li><a href="#educacao">Educação</a></li>
+          <li><a href="#economia">Economia</a></li>
+          <li><a href="#inovacao">Inovação</a></li>
+          <li><a href="#tecnologia">Tecnologia</a></li>
+        </ul>
+      <li><a href="#noticiasRecentes">Notícias Recentes</a></li>
+      <li><a href="#melhoresAutores">Melhores Autores</a></li>
+      <li><a href="#videos">Notícias em vídeo</a></li>
+      </li>
+    </ul>
   </aside>
 
 
+  <!--  SESSÃO DE ARTIGOS  -->
+
   <main>
-    <section>
+    <section id="artigos">
       <!--   Artigo 1 e 2  -->
-      <h2>Artigos recentes</h2>
+      <h3>ARTIGOS</h3>
       <article id="politica">
         <fieldset>
           <legend>
@@ -89,9 +61,11 @@
           <table>
             <tr>
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/6oFwWC4nV14KWHabUmYm8LaTXh0=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/3/9/NVnLahSASBrbgrW0UcAQ/fta20230201030.jpg"
-                  alt="Foto de político brasileiro" width="250px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/6oFwWC4nV14KWHabUmYm8LaTXh0=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/3/9/NVnLahSASBrbgrW0UcAQ/fta20230201030.jpg"
+                    alt="Foto de político brasileiro" width="250px">
+                </figure>
               </td>
               <td>
 
@@ -99,9 +73,11 @@
               </td>
 
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/qS5NAdqZtHtDwEnywziue_bx55o=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/S/j/JIHxBVTyiEMxuL7CntDQ/dsc0247.jpg"
-                  alt="Imagem do prédio da Petrobras" width="250px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/qS5NAdqZtHtDwEnywziue_bx55o=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/S/j/JIHxBVTyiEMxuL7CntDQ/dsc0247.jpg"
+                    alt="Imagem do prédio da Petrobras" width="250px">
+                </figure>
               </td>
               <td>
 
@@ -120,6 +96,7 @@
 
       <br>
       <br>
+
       <!--  Artigo 3 e 4  -->
       <article id="educacao">
         <fieldset>
@@ -129,17 +106,21 @@
           <table>
             <tr>
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/1skI6je7IrFDir040mEgfMCk7Ag=/0x0:1920x1080/810x456/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/l/B/2aVH2bQDKiRCMLOTFgAw/drone-praca-relogio2510-2.jpg"
-                  alt="Imagem de um dos campus da USP" width="250px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/1skI6je7IrFDir040mEgfMCk7Ag=/0x0:1920x1080/810x456/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/l/B/2aVH2bQDKiRCMLOTFgAw/drone-praca-relogio2510-2.jpg"
+                    alt="Imagem de um dos campus da USP" width="250px">
+                </figure>
               </td>
               <td>
                 Pela 1ª vez, USP fica entre as 100 melhores universidades do mundo.
               </td>
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/zrGDi6CxlZNyES2WfH6nOoQ7qX0=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/U/V/tB6eW3TEybKxKrSWUA8g/captura-de-tela-2023-06-26-094411.png"
-                  alt="Imagem do site do ProUni" width="250px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/zrGDi6CxlZNyES2WfH6nOoQ7qX0=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/U/V/tB6eW3TEybKxKrSWUA8g/captura-de-tela-2023-06-26-094411.png"
+                    alt="Imagem do site do ProUni" width="250px">
+                </figure>
               </td>
               <td>
 
@@ -168,18 +149,22 @@
           <table>
             <tr>
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/BL_rIconMG5yhvVRhGReKsOfzCI=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/r/G/hfYFJdTXCys9RqPFur8g/tesourodireto.png"
-                  alt="Logo do Tesouro Direto" width="300px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/BL_rIconMG5yhvVRhGReKsOfzCI=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/r/G/hfYFJdTXCys9RqPFur8g/tesourodireto.png"
+                    alt="Logo do Tesouro Direto" width="250px">
+                </figure>
               </td>
               <td>
 
                 Tesouro Direto: venda de títulos chega a R$ 4,31 bilhões em maio.
               </td>
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/0F3SrJ84Yc_CGYj3BdBM-vLFFfw=/0x216:4320x2646/810x456/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/O/l/KGf1xzSGS0n7UtrKXz4w/producao-vw-2.jpeg"
-                  alt="Imagem de um carro com o capô aberto" width="250px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/0F3SrJ84Yc_CGYj3BdBM-vLFFfw=/0x216:4320x2646/810x456/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/O/l/KGf1xzSGS0n7UtrKXz4w/producao-vw-2.jpeg"
+                    alt="Imagem de um carro com o capô aberto" width="250px">
+                </figure>
               </td>
               <td>
                 Volkswagen suspende temporariamente produção de carros no Brasil.
@@ -207,17 +192,21 @@
           <table>
             <tr>
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/YnnMpytfl7ObSLlDPM58HC6PS_g=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/k/C/IA8np3RUAQDdxWqSRd8Q/1687373796486335.jpg"
-                  alt="Imagens de um barco e um submarino lado a lado" width="300px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/YnnMpytfl7ObSLlDPM58HC6PS_g=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/k/C/IA8np3RUAQDdxWqSRd8Q/1687373796486335.jpg"
+                    alt="Imagens de um barco e um submarino lado a lado" width="250px">
+                </figure>
               </td>
               <td>
                 Como funciona a Starlink, serviço de internet de Elon Musk usado na missão do submarino que desapareceu.
               </td>
               <td>
-                <img
-                  src="https://s2-g1.glbimg.com/mE7SbHW6Ir-Q0tiNns0BnpcZSpM=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/Q/4/bVA9DtRlei0gKBFRrT3g/2023-06-21t101929z-1072425648-rc29af73zj6o-rtrmadp-3-titanic-submersible.jpg"
-                  alt="Imagem do equipamento Victor 6000" width="250px">
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/mE7SbHW6Ir-Q0tiNns0BnpcZSpM=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/Q/4/bVA9DtRlei0gKBFRrT3g/2023-06-21t101929z-1072425648-rc29af73zj6o-rtrmadp-3-titanic-submersible.jpg"
+                    alt="Imagem do equipamento Victor 6000" width="250px">
+                </figure>
               </td>
               <td>
 
@@ -237,27 +226,421 @@
       <br>
       <br>
 
+      <!--  Artigo 9 e 10 -->
+      <article id="tecnologia">
+        <fieldset>
+          <legend>
+            <h3>TECNOLOGIA</h3>
+          </legend>
+          <table>
+            <tr>
+              <td>
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/umA9evP3DtILoVBgzVhDLJmSrTQ=/0x0:640x360/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/a/4/4Loj8IRYiImphNdPvoLg/games-1.jpg"
+                    alt="Imagem de games atuais com excelentes gráficos" width="250px">
+                </figure>
+              </td>
+              <td>
+                Os truques tecnológicos que deixam os games mais próximos da realidade.
+              </td>
+              <td>
+                <figure>
+                  <img
+                    src="https://s2-g1.glbimg.com/2z6g1Iv2gGwS2joBORnpMfmiECY=/810x456/top/smart/filters:max_age(3600)/https://s01.video.glbimg.com/deo/vi/18/65/11736518"
+                    alt="Imagem de Mark Zuckerberg treinando Jiu-Jitsu" width="250px">
+                </figure>
+              </td>
+              <td>
+
+
+                Elon Musk treina jiu-jítsu brasileiro para ir ao ringue com Zuckerberg.
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="./tecnologia/tecnologia1.html">Saiba mais</a></td>
+              <td></td>
+              <td><a href="./tecnologia//tecnologia2.html">Saiba mais</a></td>
+            </tr>
+          </table>
+        </fieldset>
+      </article>
+
+      <br>
+      <br>
+
+    </section>
+
+    <!--   SESSÃO -> TABLE - NOTICIAS RECENTES   -->
+
+    <section id="noticiasRecentes">
+      <table border="1">
+
+        <thead>
+          <caption>
+            <h3>NOTÍCIAS RECENTES</h3>
+          </caption>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              Inauguração do parque infantil na cidade
+            </td>
+            <td>Sofia Mendes</td>
+            <td>4.234 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Escola local recebe prêmio acadêmico
+            </td>
+            <td>Lucas Silva</td>
+            <td>8.837 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Ampliação do transporte público beneficia moradores
+            </td>
+            <td>Sofia Mendes</td>
+            <td>6.438 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Startup lança aplicativo inovador
+            </td>
+            <td>Lucas Silva</td>
+            <td>5.234 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Campanha de reciclagem alcança sucesso
+            </td>
+            <td>Sofia Mendes</td>
+            <td>5.687 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Biblioteca municipal oferece programação cultural
+            </td>
+            <td>Ana Torres</td>
+            <td>5.394 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Hospital recebe investimentos para modernização
+            </td>
+            <td>Sofia Mendes</td>
+            <td>4.839 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Revitalização do centro histórico
+            </td>
+            <td>Lucas Silva</td>
+            <td>3.567 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Equipe esportiva local conquista vitória
+            </td>
+            <td>Ana Torres</td>
+            <td>4.560 views</td>
+          </tr>
+
+          <tr>
+            <td>
+              Feira promove consumo sustentável
+            </td>
+            <td>Lucas Silva</td>
+            <td>3.834 views</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </section>
+
+
+    <!--  MELHORES AUTORES  -->
+    <section id="melhoresAutores">
+      <h3>MELHORES AUTORES</h3>
+      <ol>
+        <li>Sofia Mendes (40 notícias)</li>
+        <li>Lucas Silva (36 notícias)</li>
+        <li>Ana Torres (26 notícias)</li>
+        <li>João Maria (23 notícias)</li>
+        <li>Ana Paula Castro (19 notícias)</li>
+        <li>Gabriel Braga (16 notícias)</li>
+      </ol>
+    </section>
+
+
+
+    <!--   SESSÃO DE VIDEOS   -->
+
+    <section id="videos">
+
+      <!--   VÍDEOS 1 E 2   -->
+      <article id="video">
+        <fieldset>
+          <legend>
+            <h3>NOTÍCIAS EM VÍDEO - CURIOSIDADES</h3>
+          </legend>
+          <table>
+            <tr>
+              <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/BJ9cHtnZ-ng"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </td>
+              <td>
+                Viagem sem volta: entenda o que aconteceu com submarino implodido a caminho do Titanic
+              </td>
+              <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/8RNopSw5JDE"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </td>
+              <td>
+                Alerta: droga K9 transforma usuários em "zumbis"
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </article>
+
+      <br>
+      <br>
+
+      <!--   VÍDEOS 3 E 4   -->
+      <article id="video">
+        <fieldset>
+          <legend>
+            <h3>NOTÍCIAS EM VÍDEO - MUNDO</h3>
+          </legend>
+          <table>
+            <tr>
+              <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/MAY2hNYan9M"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </td>
+              <td>
+                Grupo Wagner se rebela contra Rússia e ameaça ataque
+              </td>
+              <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/fbeqVyiLebo"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </td>
+              <td>
+                Cannes: Mulher vestida com as cores da Ucrânia joga sangue falso em si mesma
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </article>
+      <br>
+      <br>
+      <!--   VÍDEOS 5 E 6   -->
+      <article id="video">
+        <fieldset>
+          <legend>
+            <h3>NOTÍCIAS EM VÍDEO - MUNDO</h3>
+          </legend>
+          <table>
+            <tr>
+              <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/EjR1C1yWDtc"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </td>
+              <td>
+                Os possíveis impactos de motim de mercenários russos do Wagner
+              </td>
+              <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/skCmwsdZ2W8"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </td>
+              <td>
+                Líder do grupo Wagner diz que não queria derrubar Putin
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </article>
+
+      <br>
+      <br>
+
     </section>
   </main>
 
 
+  <!-- NOTÍCIAS RÁPIDAS -->
+
+  <section>
+    <article id="noticiasLocais">
+      <fieldset>
+        <legend>
+          <h3>NOTÍCIAS LOCAIS</h3>
+        </legend>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1571569080010-06cc1a54db4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGVkdWNhY2lvbmFsJTIwcHJlZGlvfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+            width="500px" alt="Prédio educacional de tecnologia">
+          <figcaption>Prédio educacional de tecnologia</figcaption>
+        </figure>
+        <h3>Inaugurado novo centro educacional de tecnologia em nossa cidade</h3>
+        <p>Nossa cidade celebrou a inauguração do tão esperado Centro Educacional de Tecnologia nesta terça-feira. O
+          centro, localizado no coração da região central, tem como objetivo fornecer uma infraestrutura moderna e
+          recursos avançados para capacitar estudantes e profissionais interessados em áreas como programação,
+          inteligência artificial e robótica.</p>
+        <p>Com investimentos significativos da prefeitura e parcerias com empresas de tecnologia locais, o Centro
+          Educacional de Tecnologia foi projetado para atender às demandas do mercado atual. Ele conta com laboratórios
+          equipados com computadores de última geração, salas de aula interativas e espaços colaborativos que estimulam
+          a
+          criatividade e a inovação. Além disso, o centro oferecerá cursos e workshops ministrados por especialistas do
+          setor, proporcionando uma experiência prática e imersiva aos alunos.</p>
+
+      </fieldset>
+    </article>
+
+    <article id="esporte">
+      <fieldset>
+        <legend>
+          <h3>ESPORTE</h3>
+        </legend>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1607960708254-60fb0ba03f4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80"
+            width="500px" alt="Prédio educacional de tecnologia">
+          <figcaption>Torcida celebra vitória do time</figcaption>
+        </figure>
+        <h3>Time de futebol local conquista vitória emocionante nos últimos minutos do jogo</h3>
+        <p>Em uma partida eletrizante disputada neste final de semana, o time de futebol da cidade de [Nome da cidade]
+          alcançou uma vitória emocionante nos minutos finais. O jogo, realizado no Estádio Municipal, atraiu uma
+          multidão de torcedores que testemunharam a reviravolta surpreendente no placar.</p>
+
+        <p>Com um gol marcado nos acréscimos, o time da casa assegurou a vitória por 2 a 1 contra seu rival regional,
+          desencadeando uma explosão de comemoração no estádio. Os jogadores demonstraram garra e determinação, reagindo
+          a um gol sofrido no primeiro tempo e persistindo até o último segundo da partida. A vitória representa um
+          importante impulso para o time local, que continua avançando na competição e conquistando o apoio e admiração
+          dos torcedores.</p>
+
+      </fieldset>
+    </article>
+
+
+    <article id="curiosidade">
+      <fieldset>
+        <legend>
+          <h3>CURIOSIDADE</h3>
+        </legend>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1512439408685-2e399291a4e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1095&q=80"
+            width="500px" alt="Celular sem a proteção, exibindo a bateria.">
+
+          <figcaption>Cientista dizem que logo as bateria normais ficaram obsoletas</figcaption>
+        </figure>
+        <h3>Cientistas desenvolvem bateria revolucionária que se recarrega em segundos</h3>
+
+        <p>Em um avanço impressionante no campo da tecnologia, cientistas anunciaram o desenvolvimento de uma bateria
+          revolucionária capaz de se recarregar completamente em questão de segundos. Essa descoberta promete
+          transformar a forma como utilizamos dispositivos eletrônicos e revolucionar a indústria de energia portátil.
+        </p>
+
+        <p>Essa descoberta representa um avanço significativo no campo da mobilidade e conveniência tecnológica. Imagine
+          poder recarregar seu smartphone ou tablet em segundos antes de sair de casa, ou poder utilizar seu carro
+          elétrico sem a preocupação de longos tempos de recarga. Essa nova bateria promete transformar o modo como
+          utilizamos a energia em nosso cotidiano, tornando-a mais acessível e eficiente.</p>
+
+      </fieldset>
+    </article>
+
+    <article id="entretenimento">
+      <fieldset>
+        <legend>
+          <h3>ENTRETENIMENTO</h3>
+        </legend>
+
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1534188278934-76700c2da08b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            width="500px" alt="Celular sem a proteção, exibindo a bateria.">
+
+          <figcaption>Filme foi lançado recentemente e já leva milhares de pessoas aos cinemas</figcaption>
+        </figure>
+        <h3>Novo filme de ação conquista recordes de bilheteria e cativa o público</h3>
+
+        <p>Um novo filme de ação lançado recentemente conquistou o coração do público e alcançou impressionantes
+          recordes de bilheteria. Com uma trama cheia de reviravoltas emocionantes e sequências de ação de tirar o
+          fôlego, o filme se tornou um sucesso instantâneo e gerou um burburinho entre os cinéfilos.
+        </p>
+
+        <p>Com um elenco estelar de atores renomados e uma direção habilidosa, o filme mergulha os espectadores em uma
+          história repleta de suspense e adrenalina. As cenas de ação são coreografadas com maestria, levando o público
+          a uma montanha-russa de emoções e mantendo-os presos à tela do cinema do início ao fim.</p>
+
+        <p>Além de suas incríveis sequências de ação, o filme também recebeu elogios por seu roteiro inteligente e
+          personagens bem desenvolvidos. O enredo envolvente combinado com performances cativantes dos atores principais
+          garantiu uma experiência cinematográfica memorável para o público. Com seu sucesso estrondoso, o filme prova
+          mais uma vez o poder do entretenimento em nos transportar para mundos fascinantes e nos proporcionar momentos
+          de pura diversão e emoção.</p>
+
+      </fieldset>
+    </article>
+
+  </section>
+
+
+
+  <!--  RODAPÉ   -->
 
   <footer>
     <br><br><br>
-    <table>
-      <tr>
-        <td>&copy;Copyright 2000-2023 BootCamp SoulCode Academy e Porto Seguro</td>
-      </tr>
-      <tr>
-        <td> <a href="https://www.instagram.com/soulcodeacademy/"><img src="./icons/instagram.svg" alt="Ícone Instagram"
-              width="25px"></a>
-          <a href="https://www.facebook.com/SoulCodeAcademy/"><img src="./icons/facebook.svg" alt="ícone Facebook"
-              width=" 25px"></a>
-          <a href="https://www.linkedin.com/company/soulcodeacademy/?originalSubdomain=br"><img
-              src="./icons/linkedin.svg" alt="ícone Facebook" width=" 25px"></a>
-        </td>
-      </tr>
-    </table>
+
+
+    &copy;Copyright 2000-2023 BootCamp SoulCode Academy e Porto Seguro
+
+    <br>
+    <br>
+
+    <a href="https://www.facebook.com/SoulCodeAcademy/"><img src="./icons/facebook.svg" alt="ícone Facebook"
+        width=" 25px"></a>
+    &nbsp;
+    <a href="https://www.instagram.com/soulcodeacademy/"><img src="./icons/instagram.svg" alt="Ícone Instagram"
+        width="25px"></a>
+    &nbsp;
+
+    <a href="https://www.linkedin.com/company/soulcodeacademy/?originalSubdomain=br"><img src="./icons/linkedin.svg"
+        alt="ícone Facebook" width=" 25px"></a>
+
+    &nbsp;
+
+
+    <a href="contato.html">Contato</a>
+
     <br><br><br>
   </footer>
 
