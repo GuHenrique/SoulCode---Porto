@@ -1,0 +1,35 @@
+/* REM - Medida relativa ao elemento HTML */
+
+.container h1, .container h2, .container h3{
+
+  text-align: center;
+  font-style: italic;
+  font-weight: 100;
+  color: slategrey;
+}
+
+.container h1 {
+  font-size: 3rem; 
+  /* 3 x 16px = 48px */
+  /* 16px = valor padrão do html nos navegadores  */
+}
+
+.container h2 {
+  font-size: 2.5rem;
+}
+
+.container h3 {
+  font-size: 2rem;
+}
+
+.container p {
+  text-align: justify;
+  font-size: 1.25rem;
+}
+
+/* Elemente raíz */
+html {
+  
+  /* fonte base na raíz */
+  font-size: 24px;
+}
