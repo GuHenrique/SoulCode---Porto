@@ -1,0 +1,41 @@
+body{
+
+  font-family: 'Montserrat', sans-serif;
+  background-color: bisque;
+  color: gray;
+}
+
+.codigo{
+  font-family: monospace;
+  color: black;
+  font-size: large;
+}
+
+/* Prioridades
+
+1 - inline
+2 - tag style
+3 - arquivo externo
+
+Atibutos
+
+1 - atributo style
+2 - id
+3 - classe
+4 - seletor tipo
+
+*/
+
+h1, h2, h3{
+  color: black;
+  background-color: blueviolet;
+  text-decoration: line-through;
+}
+
+.custom-h1 {
+  background-color: blue;
+}
+
+#meu-h1{
+  background-color: chartreuse;
+}
