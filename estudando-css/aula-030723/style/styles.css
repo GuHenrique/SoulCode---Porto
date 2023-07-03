@@ -1,0 +1,67 @@
+/* 
+Box Model = podemos configurar a aparência da caixa dos elementos
+padding = preencheminto
+margin = espaçamento externo
+border = contorno
+
+*/
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+.box1 {
+  font-size: 1.5em;
+  background-color: orange;
+  text-align: justify;
+
+  padding: 2em;
+  margin: 5em;
+  border: 0.5em dotted black;
+
+}
+
+.box2 {
+  font-size: 1.5em;
+  background-color: blueviolet;
+  text-align: justify;
+
+/* TOP RIGHT BOTTOM LEFT */
+  padding: 1em 2em 4em 8em;
+  margin: 2em 4em 6em 8em;
+  border: 0.5em double black;
+
+}
+
+.box3 {
+  font-size: 1.5em;
+  background-color: darkred;
+  text-align: justify;
+
+/* TOP RIGHT BOTTOM LEFT */
+  padding: 2em;
+ 
+  border: 0.5em solid black;
+}
+
+.box4 {
+  font-size: 1.5em;
+  background-color: green;
+  text-align: justify;
+
+  margin: 1em;
+  padding: 1em;
+  border: 0.5em solid black;
+  width: 20em;
+
+}
+
