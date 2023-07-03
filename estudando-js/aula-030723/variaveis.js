@@ -10,6 +10,8 @@ let num2 = 2.4
 let texto = "dassda";
 let booleano = true;
 
+const PI = 3.14; //Quando declarado uma varável como const ela não poderá ser alterada ao decorrer do algoritimo, diferente de let.
+
 // Tipagem dinâmica
 
 console.log(num + " é um(a) " + typeof (num));
