@@ -33,8 +33,9 @@ p{
 
 
 input {
-  width: 100px;
-  height: 30px;
+  width: 200px;
+  height: 50px;
+  font-size: 1.2em;
   border: none;
   border-radius: 6px;
   background-color: rgb(37,37,37);
@@ -46,4 +47,29 @@ input {
 input:hover{
  
   background-color: grey;
+}
+
+ul{
+  text-align: center;
+  margin-top: 50px;
+}
+
+li{
+  display: inline;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  background-color: burlywood;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 30px;
+
+  transition: 0.3s;
+}
+
+a:hover{
+  background-color: black;
+  color: white;
 }
