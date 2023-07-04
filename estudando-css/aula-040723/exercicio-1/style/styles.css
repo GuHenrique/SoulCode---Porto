@@ -2,13 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+html{
   font-family: 'Oswald', sans-serif;
+ 
 }
 
 body {
   background-image: url("https://images.unsplash.com/photo-1686806372785-fcfe9efa9b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDg2fGlVSXNuVnRqQjBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -18,21 +24,20 @@ margin-top: 30px;
 
 h2{
   text-align: center;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 p{
   text-align: justify;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .btn {
   margin-top: 10px;
-  text-align: center;
 }
 
 
-input {
+.btn button {
   width: 200px;
   height: 50px;
   font-size: 1.2em;
@@ -40,36 +45,39 @@ input {
   border-radius: 6px;
   background-color: rgb(37,37,37);
   color: white;
+  display: block;
+  margin: 4px auto;
   cursor: pointer;
   transition: 0.3s;
 }
 
-input:hover{
- 
-  background-color: grey;
+button:hover{
+ background-color: grey;
 }
 
-ul{
+span {
+  vertical-align: middle;
+}
+
+nav ul{
   text-align: center;
-  margin-top: 50px;
+  background-color: burlywood;
+  padding: 15px
 }
 
-li{
+nav li{
   display: inline;
 }
 
-a{
+nav a{
   text-decoration: none;
   cursor: pointer;
-  background-color: burlywood;
   color: black;
-  border-radius: 10px;
-  padding: 10px 30px;
-
+  margin-right: 20px;
+  font-size: 1.2em;
   transition: 0.3s;
 }
 
-a:hover{
-  background-color: black;
+nav a:hover{
   color: white;
 }
