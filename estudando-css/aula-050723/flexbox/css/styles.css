@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-1 {
+  background-color: #ddd;
+  padding: 12px;
+  display: flex;
+  height: 600px;
+
+  /* caso a tela diminua, permite que quebre a linha e os item vão para baixo */
+  flex-wrap: wrap;
+  /* Atalho para atribuir o tipo de direção e wrap na flexbox */
+  flex-flow: row wrap;
+
+  /* mudar a direção da flexbox, por padrão ja vem row */
+  flex-direction: row;
+
+  /* Ajusta os elementos no eixo main da flexbox */
+  /* start, end, center, space-between, space-around */
+  justify-content: space-between;
+
+  /* Ajusta os elementos no eixo cross da flexbox */
+  align-items: start;
+
+  /* Só funciona caso os elementos tenham linhas */
+  /* Faz o alinhamento baseados nas linhas dos elementos */
+  align-content: flex-end;
+
+}
+
+.item-1 {
+  background-color: orange;
+}
+
+.item-2 {
+  background-color: red;
+}
+
+.item-3 {
+  background-color: turquoise;
+  /* align-self: flex-start; */
+}
+
+.item-4 {
+  background-color: gold;
+}
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+  width: 200px;
+  padding: 8px;
+}
+
+.container-2 {
+  background-color: orange;
+  height: 250px;
+  display: flex;
+}
+
+.coluna-1 {
+  background-color: aqua;
+  width: 200px;
+}
+
+.coluna-2 {
+  background-color: chartreuse;
+  flex: 1;
+}
+
+.coluna-3 {
+  background-color: yellow;
+  flex: 1;
+}
