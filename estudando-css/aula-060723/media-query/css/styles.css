@@ -1,0 +1,28 @@
+/* 
+Media Queries = regras especiais (Pode ser aplicada ou não)
+
+@media comdicao {
+  estilos a serem aplicados caso a condição seja veradeira
+}
+
+*/
+
+/* Dispositivos de tela (mobile, tablet, desktop) */
+/* MAX-WIDTH <= 599PX */
+/* Largura tem que ser no máximo 599, nesse caso. */
+@media screen and (max-width: 599px) {
+
+  body {
+    background-color: orange;
+    font-family: monospace;
+  }
+
+
+}
+
+/* Largura precisa estar entre 600px e 1000px, nesse caso. */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  body {
+    background-color: steelblue;
+  }
+}
