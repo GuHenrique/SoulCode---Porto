@@ -48,6 +48,5 @@ nomeVetor.forEach(e => {
 })
 
 
-Math.random()
 
 
