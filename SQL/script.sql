@@ -19,8 +19,7 @@ CREATE TABLE departamento( -- CRIAR TABELA E AS COLUNAS
     descricao VARCHAR(200)
 );
 
-SELECT * FROM DEPARTAMENTO;
-INSERT INTO DEPARTAMENTO VALUES (NULL, "RH", "Recursos Humanos");
+INSERT INTO departamento VALUES (NULL, "RH", "Recursos Humanos");
 
 -- TIPOS DE DADOS
 -- INT / INTEGER = ATÉ 2BILHOES
@@ -34,4 +33,29 @@ INSERT INTO DEPARTAMENTO VALUES (NULL, "RH", "Recursos Humanos");
 -- TIME = FORMATO hh:mm:ss
 -- DATETIME = FORMATO YYYY-MM-DD hh:mm:ss
 -- BLOB = ARQUIVOS (BINARY LARGE OBJECT)
+
+
+CREATE TABLE colaborador(
+	idColaborador INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(200) NOT NULL,
+    cpf VARCHAR(11) UNIQUE NOT NULL,
+    salario DECIMAL(8, 2) NOT NULL,
+    telefone VARCHAR(20) UNIQUE NOT NULL,
+    dataNascimento DATE NOT NULL,
+    fkDepartamento INTEGER NOT NULL,
+    FOREIGN KEY (fkDepartamento) -- COLUNA QUE SERÁ A CHAVE ESTRANGEIRA
+    REFERENCES departamento(idDepartamento) -- CHAVE PRIMÁRIA DA OUTRA TABELA
+);
+
+CREATE TABLE endereco(
+	idEndereco INTEGER PRIMARY KEY AUTO_INCREMENT,
+    cidade VARCHAR(30) NOT NULL,
+    uf VARCHAR(2) NOT NULL,
+    rua VARCHAR(40) NOT NULL,
+    numero VARCHAR(20) NOT NULL,
+    complemento VARCHAR(40) DEFAULT("Sem Complemento"),
+    fkColaborador UNIQUE INTEGER NOT NULL,
+    FOREIGN KEY (fkColaborador)
+    REFERENCES colaborador(idColaborador)
+);
 
