@@ -1,0 +1,37 @@
+CREATE DATABASE loja_db;
+
+USE loja_db;
+-- SCHEMA => ESTRUTURA DE TABELAS E COLUNAS
+
+CREATE TABLE vendedor(
+	idVendedor INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(60) NOT NULL,
+    sobrenome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    dataNascimento DATE
+);
+
+-- categoria
+
+ALTER TABLE vendedor ADD COLUMN cat VARCHAR(30) NOT NULL DEFAULT("Sem categoria");
+
+INSERT INTO vendedor VALUES (NULL, "GUSTAVO", "SILVA", "GUSTAVO@GMAIL.COM", "1997-10-16");
+
+-- RENOMEAR COLUNAS 
+ALTER TABLE vendedor CHANGE cat categoria VARCHAR(30) NOT NULL DEFAULT ("Sem categoria");
+
+-- ALTERAR CONSTRAINTS
+ALTER TABLE vendedor MODIFY nome VARCHAR(75) NOT NULL;
+
+ALTER TABLE vendedor MODIFY categoria VARCHAR(40) NOT NULL DEFAULT("Sem categoria");
+
+-- REMOVER COLUNAS
+ALTER TABLE vendedor DROP COLUMN dataNascimento;
+
+-- RENOMEAR TABELAS
+ALTER TABLE vendedor RENAME TO vendedores;
+
+-- RENOMEAR COLUNA SEM ALTERAR CONSTRAINTS
+ALTER TABLE vendedores RENAME COLUMN categoria TO cat;
+
+select * from vendedores;
