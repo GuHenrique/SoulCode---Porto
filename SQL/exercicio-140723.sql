@@ -1,5 +1,5 @@
-CREATE DATABASE empresa_atividade;
-USE empresa_atividade;
+CREATE DATABASE loja_db;
+USE loja_db;
 
 CREATE TABLE vendedor (
 	idVendedor INTEGER PRIMARY KEY AUTO_INCREMENT,
