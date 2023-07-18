@@ -20,6 +20,4 @@ function galeria() {
   }
 }
 
-
 setInterval(galeria, 2000);
-
