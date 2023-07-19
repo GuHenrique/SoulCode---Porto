@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <title>Semaforo</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    div {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+
+    }
+
+    button {
+      border-radius: 50%;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+
+
+    #vermelho {
+      background-color: red;
+    }
+
+    #amarelo {
+      background-color: yellow;
+    }
+
+    #verde {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="assets/vermelho.png" alt="">
+
+  <div>
+    <button id="vermelho">Vermelho</button>
+    <button id="amarelo">Amarelo</button>
+    <button id="verde">Verde</button>
+    <button id="automatico">Automatico</button>
+  </div>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-const imagens = [
+const semafaros = [
   "https://images.unsplash.com/photo-1689101298752-886c970ff200?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
   "https://images.unsplash.com/photo-1688670564879-239883a0e330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=663&q=80",
   "https://images.unsplash.com/photo-1683404633769-a33c656df6a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
@@ -7,13 +7,13 @@ const imagens = [
 ]
 
 
-let imagem = document.querySelector("#galeria");
+let img = document.querySelector("#galeria");
 let indiceAtual = 1;
 
 
 function galeria() {
-  imagem.src = imagens[indiceAtual];
-  if (indiceAtual == (imagens.length - 1)) {
+  img.src = semafaros[indiceAtual];
+  if (indiceAtual == (semafaros.length - 1)) {
     indiceAtual = 0;
   } else {
     indiceAtual++;
