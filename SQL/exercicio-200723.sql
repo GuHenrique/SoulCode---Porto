@@ -238,11 +238,15 @@ SELECT *
 WHERE MONTH(dataNasc) = MONTH(NOW());
 
 -- Q8: Liste os nomes dos dependentes do colaborador de ID = 1. 
-SELECT d.nome AS nomeDependente
+SELECT c.nomecompleto AS nomeColaborador, d.nome AS nomeDependente
 	FROM dependente AS d
     JOIN colaborador AS c
     ON d.fkColaborador = c.idColaborador
 WHERE c.idColaborador = 1;
+
+-- Caso nao queira trazer o nome do colaborador
+
+SELECT * FROM dependente WHERE fkColaborador = 1;
 
 -- Q9: Mostre quantas pessoas estão alocadas em cada projeto da empresa. 
 SELECT COUNT(*), nome
@@ -284,12 +288,16 @@ UPDATE colaborador
 	SET salario = salario * 1.1
 WHERE YEAR(dataNasc) < 1990; 
 
-SELECT * FROM colaborador;
+-- OU 
+
+SELECT NOMECOMPLETO, DATANASC, SALARIO SALARIO_ANTIGO, 
+SALARIO + (SALARIO * 0.1) SALARIO_ATUAL 
+FROM COLABORADOR 
+WHERE YEAR(DATANASC) < 1990;
 
 -- Q15: Liste quantos colaboradores existem em cada estado na tabela.
-SELECT COUNT(*), uf
+SELECT uf, COUNT(*)
 	FROM colaborador
     JOIN endereco
     ON fkColaborador = idColaborador
     GROUP BY uf;
-
