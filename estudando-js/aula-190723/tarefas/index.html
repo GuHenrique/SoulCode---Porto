@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarefas</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form action="#">
+    <fieldset>
+      <legend>Cadastrar tarefa</legend>
+      <label for="descricao">Descrição</label>
+      <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+
+      <label for="prioridade">Prioridade</label>
+      <select name="prioridade" id="prioridade">
+        <option value="" disabled selected>Selecione a prioridade</option>
+        <option value="Baixa">Baixa</option>
+        <option value="Média">Média</option>
+        <option value="Alta">Alta</option>
+      </select>
+
+
+      <label for="status">Status</label>
+      <select name="status" id="status">
+        <option value="" disabled selected>Selecione o status</option>
+        <option value="À fazer">À fazer</option>
+        <option value="Fazendo">Fazendo</option>
+        <option value="Feita">Feita</option>
+      </select>
+
+
+      <label for="prazo">Prazo</label>
+      <input type="date" name="prazo" id="prazo">
+
+
+
+      <input type="button" value="Enviar" id="enviar">
+    </fieldset>
+  </form>
+
+  <table>
+    <thead>
+      <th>Descrição</th>
+      <th>Prioridade</th>
+      <th>Status</th>
+      <th>Prazo</th>
+    </thead>
+    <tbody id="tarefa">
+
+    </tbody>
+  </table>
+
+  <button id="remove">Remover</button>
+  <button id="done">Concluída</button>
+
+</body>
+
+
+
+
+
+
+
+</div>
+
+</html>
