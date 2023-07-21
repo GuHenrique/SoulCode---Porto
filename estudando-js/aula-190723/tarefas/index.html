@@ -11,7 +11,7 @@
 
 <body>
 
-  <form action="#">
+  <form id="formTarefa">
     <fieldset>
       <legend>Cadastrar tarefa</legend>
       <label for="descricao">Descrição</label>
@@ -31,7 +31,6 @@
         <option value="" disabled selected>Selecione o status</option>
         <option value="À fazer">À fazer</option>
         <option value="Fazendo">Fazendo</option>
-        <option value="Feita">Feita</option>
       </select>
 
 
@@ -40,33 +39,16 @@
 
 
 
-      <input type="button" value="Enviar" id="enviar">
+      <button type="submit"> Enviar </button>
     </fieldset>
   </form>
 
-  <table>
-    <thead>
-      <th>Descrição</th>
-      <th>Prioridade</th>
-      <th>Status</th>
-      <th>Prazo</th>
-    </thead>
-    <tbody id="tarefa">
 
-    </tbody>
-  </table>
 
-  <button id="remove">Remover</button>
-  <button id="done">Concluída</button>
+
+  <div id="container"></div>
+
 
 </body>
-
-
-
-
-
-
-
-</div>
 
 </html>
