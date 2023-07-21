@@ -26,4 +26,6 @@ th {
   text-align: center;
 }
 
-.concluida {}
+table {
+  margin-top: 10px;
+}
